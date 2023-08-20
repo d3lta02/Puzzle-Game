@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#image-upload {
+    display: none;
+}
+
+#shuffle-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.puzzle-container {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+/* ... Previous CSS rules ... */
+
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    background-size: 300px 300px;
+    cursor: pointer;
+    transition: border-color 0.3s; /* Added transition for smooth effect */
+    border: 2px solid transparent; /* Add a transparent border initially */
+}
+
+.puzzle-piece.highlight {
+    border-color: #b10f3f; /* Change border color to indicate highlight */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
